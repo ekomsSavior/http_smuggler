@@ -1,0 +1,38 @@
+
+--- TE.CL ---
+HTTP/1.1 405 Not Allowed
+Server: nginx/1.18.0 (Ubuntu)
+Date: Thu, 07 Aug 2025 16:48:23 GMT
+Content-Type: text/html
+Content-Length: 166
+Connection: keep-alive
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>
+
+
+--- CL.TE ---
+HTTP/1.1 405 Not Allowed
+Server: nginx/1.18.0 (Ubuntu)
+Date: Thu, 07 Aug 2025 16:48:23 GMT
+Content-Type: text/html
+Content-Length: 166
+Connection: close
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>
+

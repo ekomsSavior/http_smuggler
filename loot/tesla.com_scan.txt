@@ -1,0 +1,6 @@
+
+--- TE.CL ---
+ERROR: str, bytes or bytearray expected, not NoneType
+
+--- CL.TE ---
+ERROR: str, bytes or bytearray expected, not NoneType
