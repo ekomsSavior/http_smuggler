@@ -78,19 +78,8 @@ python3 http_smuggler.py
 
 Menu:
 
-```
-HTTP Smuggler - Desync Recon Scanner
-By ekomsSavior
+<img width="1280" height="725" alt="Screenshot_2025-08-08_13_31_13" src="https://github.com/user-attachments/assets/4319b401-e9ec-48f5-b01b-415f5e644c06" />
 
-[1] Scan a target for HTTP request smuggling
-[2] Generate custom smuggle payloads
-[3] View loot files
-[4] Execute a saved payload
-[5] Auto-detect desync (scored)
-[6] Auto-exploit chain (cache poison / login hijack)
-[7] Full chain: detect → payload → exploit
-[0] Exit
-```
 
 > **Targets must be HTTP** (e.g., `http://host[:port]/`). The tool does not speak TLS.
 
