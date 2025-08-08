@@ -1,5 +1,4 @@
-# HTTP Smuggler — Desync Recon & Exploitation (HTTP/1.1, raw sockets)
-
+# HTTP Smuggler — Desync Recon & Exploitation 
 HTTP Smuggler is a focused HTTP/1.1 request-smuggling reconnaissance and exploitation tool for advanced operators. It sends **raw**, hand-crafted HTTP/1.1 requests over plain TCP using sockets—no HTTP client libraries, no HTTPS, no Burp. It’s designed for environments where **frontend reverse proxies** multiplex user traffic to **origin servers** over **upstream HTTP/1.1** and ambiguities in request framing can be abused to create a **desynchronization (desync)** between the two.
 
 The tool bundles three workflows:
